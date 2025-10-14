@@ -1,0 +1,46 @@
+# ---- Terraform ----
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*.tfvars
+terraform.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+
+# ---- Local environment ----
+*.log
+*.bak
+*.tmp
+*.swp
+.DS_Store
+
+# ---- AWS credentials ----
+*.pem
+*.key
+*.crt
+*.csv
+credentials
+.aws/
+
+# ---- Kubernetes ----
+.kube/
+*.yaml~
+*.yml~
+*.out
+
+# ---- IDE / Editor ----
+.vscode/
+.idea/
+*.code-workspace
+
+# ---- OS Files ----
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# ---- Build / Outputs ----
+output/
+dist/
+build/
