@@ -16,5 +16,15 @@ spec:
       containers:
       - name: result
         image: dockersamples/examplevotingapp_result
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+          limits:
+            cpu: "300m"
+            memory: "256Mi"
         ports:
         - containerPort: 80
+        env:
+        - name: DB_HOST
+          value: "db"
