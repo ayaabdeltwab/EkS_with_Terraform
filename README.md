@@ -55,15 +55,15 @@ The following diagram illustrates the architecture of the EKS cluster provisione
    cd EKS_with_Terraform/terraform_files
    
 2.Initialize and apply Terraform:
-terraform init
-terraform plan
-terraform apply
+  terraform init
+  terraform plan
+  terraform apply
 
 3.Update kubeconfig:
-aws eks update-kubeconfig --region <region> --name <cluster_name>
+ aws eks update-kubeconfig --region <region> --name <cluster_name>
 
 4.Verify your cluster:
-kubectl get nodes
+ kubectl get nodes
 
 
 
