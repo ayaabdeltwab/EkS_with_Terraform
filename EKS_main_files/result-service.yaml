@@ -4,7 +4,7 @@ metadata:
   name: result
   namespace: voting-app
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
   - port: 80
     nodePort: 30002
